@@ -1,0 +1,127 @@
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+
+       <!--REQUIRED: viewport metadata added 4/22/24 -->
+
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Painter Company | Contact</title>
+
+       <!--REQUIRED: stylesheet added 4/16/24 -->
+
+       <link href="basic.css" rel="stylesheet" />
+       <link href="index.css" rel="stylesheet" />
+       <link href="forms.css" rel="stylesheet" />
+
+       <!--REQUIRED: keywords metadata added 4/22/24 -->
+
+       <meta name="keywords" content="painter, art, portfolio, paintings, artist">
+
+       <!--REQUIRED: author metadata added 4/22/24 -->
+
+       <meta name="author" content="Roman Maximov">
+
+       <!--REQUIRED: description metadata added 4/22/24 -->
+
+       <meta name="description" content="Contact page, here you can see contact information. Or send mail to us">
+
+
+   </head>
+   <body>
+       <header>
+        <!-- REQUIRED: logo image added 4/17/24 -->
+           <div class="logo">
+            <img src="media/logo.png" alt="Logo Painter Company">
+        </div>
+           <nav>
+               <ul>
+                   <li><a href="index.html">HOME</a></li>
+                   <li><a href="interior.html">INTERIOR</a></li>
+                   <li><a href="exterior.html">EXTERIOR</a></li>
+                   <li><a href="portfolio.html">PORTFOLIO</a></li>
+                   <li><a href="contact.html">CONTACT</a></li>
+
+
+               </ul>
+           </nav>
+       </header>
+       <main>
+        <div class="form-container">
+            <h2>Contact Us</h2>
+                
+        <!-- REQUIRED: form added 4/17/24 -->            
+            <form action="submit_form.php" method="POST">
+        <!-- REQUIRED: input box with name of client added 4/17/24 -->            
+        <label for="name">Your Name:</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+        <!-- REQUIRED: input box with email contact information added 4/17/24 -->            
+        <label for="email">Your Email:</label>
+        <!-- REQUIRED: maxlength added 5/2/24 -->            
+
+              <input type="email" id="email" name="email" maxlength="50" placeholder="Enter your email">
+
+        <!-- REQUIRED: input box cell or home phone added 4/17/24 -->            
+        <label for="phone">Your Phone:</label>
+
+        <!-- REQUIRED: placeholder add pattern numbers added 5/1/24 -->  
+              <input name="custPhone" id="phone" type="tel" placeholder="nnnnn (-nnnn)"
+                   pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+        <!-- REQUIRED: input box added 4/17/24 -->            
+        <label for="message">Message:</label>
+         <!-- REQUIRED: Textarea added 5/3/24 -->            
+
+              <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+
+              <label for="info">Where did you hear about us? <br />(select all that apply) </label> 
+            <select name="infoSrc" id="info" size="5" multiple>    
+            <option value="internet">Web</option>    
+            <option value="mag">Commercial</option>    
+            <option value="news">From other custumers</option>    
+            <option value="word">Top of Mouth</option>    
+            <option value="other">Other</option> 
+            </select> 
+
+        <!-- REQUIRED: fieldset added 5/1/24 -->  
+
+            <fieldset> 
+        <!-- REQUIRED: legend added 5/1/24 -->  
+                <legend>WorkTypes</legend>
+                <select name="WorkTypes" id="Works">       
+                   <option value="Exterior">Exterior</option>       
+                   <option value="Interior">Interior</option>       
+                   <option value="Artist" selected>Artist Painting</option>       
+                   <option value="On the go">On the go</option>    
+                </select> 
+            </fieldset>
+        <!-- REQUIRED: 2 data types 5/1/24 -->  
+        <!-- REQUIRED: Submit button added 5/1/24 -->  
+              <div>
+                <input type="submit" value="Submit">
+        <!-- REQUIRED: Reset button added 5/1/24 -->  
+
+                <input type="reset" value="Reset">
+              </div>
+
+              <address>
+                <p>Contact us:</p>
+                
+                  23 Main Street, City
+                  Phone: 555-123-4567
+                  Email: info@example.com
+             
+              </address>
+            </form>
+          </div>
+
+          
+       </main>
+       
+       <footer>
+        <p> 2024 Roman Maximov. All rights reserved.</p>
+       </footer>
+   </body>
+   </html>
+     
+   

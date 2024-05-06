@@ -1,0 +1,134 @@
+/*
+
+   Author: Roman Maximov
+   Date: 7/4/2024  
+
+*/
+
+
+/* Fonts */
+body {
+   font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3 {
+   font-family: 'Futura', sans-serif;
+}
+
+/* Font Sizes */
+p {
+   font-size: 16px;
+}
+
+h2 {
+   font-size: 20px;
+}
+
+h1 {
+   font-size: 32px;
+}
+
+h2 {
+   font-size: 28px;
+}
+
+h3 {
+   font-size: 24px;
+}
+
+/* Additional Styles */
+body {
+   background-color: #f0f0f0;
+   color: #333;
+}
+
+/* Header Styles */
+header {
+   background-color: #333;
+   color: #fff;
+   padding: 10px;
+}
+
+.logo img {
+   max-width: 100px;
+   padding: 2%;
+}
+
+nav ul {
+   list-style-type: none;
+   padding: 1%;
+}
+
+nav ul li {
+   display: inline;
+   margin-right: 30px;
+}
+
+nav ul li a {
+   color: #fff;
+   text-decoration: none;
+}
+
+/* Footer Styles */
+footer {
+   background-color: #333;
+   color: #fff;
+   padding: 10px;
+   text-align: center;
+}
+
+/* Dynamic style for the navigation links */
+nav ul li a:hover, nav ul li a:active {
+   color: rgb(255, 0, 0);
+}
+
+/* Default styles for all devices */
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+   /* Selector 1 */
+
+    nav {
+      margin-top: 10px;
+      margin-bottom: 0;
+      margin-left: 0;
+    }
+    img {
+      max-width: 100%; /* Reduce image size to 80% of the container width */
+  }
+
+
+
+ }
+ 
+ /* Tablet styles */
+ @media (min-width: 768px) and (max-width: 1023px) {
+   /* Selector 1 */
+   nav {
+      float: none;
+      width: 6%;
+      height: auto;
+      margin: 0;
+    }
+    img {
+      max-width: 100%; /* Reduce image size to 70% of the container width */
+  }
+
+ }
+
+ 
+ /* Mobile styles */
+ @media (max-width: 501px) {
+   /* Selector 1 */
+   nav {
+      float: none;
+      width: 6%;
+      margin-top: 10px;
+      margin-bottom: 0;
+      margin-left: 0;
+    }
+    img {
+      max-width: 100%; /* Reduce image size to 70% of the container width */
+  }
+
+ }
